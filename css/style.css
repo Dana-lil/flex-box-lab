@@ -12,6 +12,8 @@ body {
 nav {
   background-color: white;
   padding: 8px 16px;
+  display : flex ;
+  justify-content: space-between;
 }
 
 p {
@@ -23,11 +25,16 @@ section {
   background-color: black;
   color: white;
   padding: 24px 72px;
+  display : flex ;
+  flex-direction:  column;
+  justify-content: space-around;
+align-items: center;
 }
 
 h1,
 h2 {
   text-align: center;
+  font-size : 32px;
 }
 
 h1 {
@@ -36,7 +43,7 @@ h1 {
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 0;
 }
 
@@ -52,6 +59,10 @@ input {
 main {
   background-color: white;
   padding: 32px 72px;
+  display: flex;
+  gap:32px;
+  flex-wrap:wrap;
+  justify-content: center;
 }
 
 nav button {
@@ -72,15 +83,20 @@ nav button {
 
 .card-footer {
   font-size: 14px;
+  display:flex;
+  justify-content: space-between;
 }
 
 .card-footer * {
   margin-top: 8px;
+
 }
 
 #subnav {
   padding: 32px 72px 0;
   background-color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 #subnav button {
@@ -98,10 +114,12 @@ nav button {
 }
 
 
-#destinations {
+#destinations,
+#actions {
 display: flex;
 justify-content:flex-start ;
-gap:20px;
+gap:10px;
+align-items: center;
    }  
 
    #actions{
@@ -126,22 +144,4 @@ gap:20px;
     padding:30px;
     
     
-  }
-  
-  
-
-  #subnav{
-    display: flex;
-    justify-content: space-between;
-    
-
-  }
-  main{
-
-    display: flex;
-    align-items: center;
-    gap:20px;
-
-    flex-wrap: wrap;
-
   }
